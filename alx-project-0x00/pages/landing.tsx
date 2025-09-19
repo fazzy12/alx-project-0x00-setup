@@ -9,15 +9,27 @@ const Landing: React.FC = () => {
       
       <div className="mt-8 space-y-4">
         <h2 className="text-lg font-semibold">Button Examples</h2>
-        <div className="flex space-x-4">
-          <Button title="Small Rounded" size="small" shape="rounded-full" />
-          <Button title="Medium Default" size="medium" />
-          <Button title="Large Rounded" size="large" shape="rounded-md" />
+        
+        {/* Size variations */}
+        <div className="flex space-x-4 items-center">
+          <Button title="Small" styles="bg-blue-500 text-white" size="small" shape="rounded-sm" />
+          <Button title="Medium" styles="bg-green-500 text-white" size="medium" shape="rounded-md" />
+          <Button title="Large" styles="bg-red-500 text-white" size="large" shape="rounded-full" />
         </div>
-        <div className="flex space-x-4">
-          <Button title="Primary" className="bg-blue-600 hover:bg-blue-700" />
-          <Button title="Secondary" className="bg-gray-600 hover:bg-gray-700" />
-          <Button title="Success" className="bg-green-600 hover:bg-green-700" />
+        
+        {/* Shape variations */}
+        <div className="flex space-x-4 items-center">
+          <Button title="Rounded Small" styles="bg-purple-500 text-white" size="medium" shape="rounded-sm" />
+          <Button title="Rounded Medium" styles="bg-yellow-500 text-black" size="medium" shape="rounded-md" />
+          <Button title="Rounded Full" styles="bg-indigo-500 text-white" size="medium" shape="rounded-full" />
+          <Button title="Rounded Large" styles="bg-pink-500 text-white" size="medium" shape="rounded-lg" />
+        </div>
+        
+        {/* Style variations */}
+        <div className="flex space-x-4 items-center">
+          <Button title="Primary" styles="bg-blue-600 hover:bg-blue-700 text-white font-bold" size="medium" shape="rounded-md" />
+          <Button title="Secondary" styles="bg-gray-600 hover:bg-gray-700 text-white font-bold" size="medium" shape="rounded-md" />
+          <Button title="Success" styles="bg-green-600 hover:bg-green-700 text-white font-bold" size="medium" shape="rounded-md" />
         </div>
       </div>
     </div>
