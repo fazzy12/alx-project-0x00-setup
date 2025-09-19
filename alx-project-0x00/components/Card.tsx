@@ -1,7 +1,7 @@
 import Image from "next/image"
 import HOUSE_IMAGE from "@/public/assests/images/house.png"
 import STAR_IMAGE from "@/public/assests/images/star.png"
-import React from "react"
+import { PillProps } from "@/interfaces";
 import Pill from "./Pill"
 
 
